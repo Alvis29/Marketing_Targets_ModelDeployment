@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Targets</title>
+
+    <style>
+        html{
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #efefef;
+        }
+        
+
+        h1{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Banking - Marketing Targets</h1>
+        <section class="Application-form">
+            <h2>Application Form</h2>
+            <form action="{{url_for('predict')}}" method="post">
+                <div>
+                    <label for="age">age:</label>
+                    <input type="number" name="age" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="job">job:</label>
+                    <select name="job" id="job">
+                        <option selected disabled value="">--Enter job--</option>
+                        <option value="management">management</option>
+                        <option value="technician">technician</option>
+                        <option value="entrepreneur">entrepreneur</option>
+                        <option value="blue-collar">blue-collar</option>
+                        <option value="retired">retired</option>
+                        <option value="admin">admin</option>
+                        <option value="services">services</option>
+                        <option value="self-employed">self-employed</option>
+                        <option value="unemployed">unemployed</option>
+                        <option value="housemaid">housemaid</option>
+                        <option value="student">student</option>
+                        <option value="unknown">unknown</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="marital">marital:</label>
+                    <select name="marital" id="marital" required>
+                        <option selected disabled value="">--Enter marital status--</option>
+                        <option value="single">single</option>
+                        <option value="married">married</option>
+                        <option value="divorced">divorced</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="education">education:</label>
+                    <select name="education" id="education" required>
+                        <option selected disabled value="">--Enter education--</option>
+                        <option value="primary">primary</option>
+                        <option value="secondary">secondary</option>
+                        <option value="tertiary">tertiary</option>
+                        <option value="unknown">unknown</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="default">default:</label>
+                    <select name="default" id="default" required>
+                        <option selected disabled value="">--defaulter--</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="balance">balance:</label>
+                    <input type="number" name="balance" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="housing">housing:</label>
+                    <select name="housing" id="housing" required>
+                        <option selected disabled value="">--housing loan taken--</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="loan">loan:</label>
+                    <select name="loan" id="loan" required>
+                        <option selected disabled value="">--loan taken--</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="contact">contact:</label>
+                    <select name="contact" id="contact" required>
+                        <option selected disabled value="">--Enter contact type--</option>
+                        <option value="telephone">telephone</option>
+                        <option value="cellular">cellular</option>
+                        <option value="unknown">unknown</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="day">day:</label>
+                    <input type="number" name="day" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="month">month:</label>
+                    <select name="month" id="month" >
+                        <option selected disabled value="">--Last contacted month--</option>
+                        <option value="jan">jan</option>
+                        <option value="feb">feb</option>
+                        <option value="mar">mar</option>
+                        <option value="apr">apr</option>
+                        <option value="may">may</option>
+                        <option value="jun">jun</option>
+                        <option value="jul">jul</option>
+                        <option value="aug">aug</option>
+                        <option value="sep">sep</option>
+                        <option value="oct">oct</option>
+                        <option value="nov">nov</option>
+                        <option value="dec">dec</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="duration">duration:</label>
+                    <input type="number" name="duration" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="campaign">campaign:</label>
+                    <input type="number" name="campaign" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="pdays">pdays:</label>
+                    <input type="number" name="pdays" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="previous">previous:</label>
+                    <input type="number" name="previous" required autocomplete="off">
+                </div><br>
+                <div>
+                    <label for="poutcome">poutcome:</label>
+                    <select name="poutcome" id="poutcome" required>
+                        <option selected disabled value="">--Enter poutcome--</option>
+                        <option value="success">success</option>
+                        <option value="failure">failure</option>
+                        <option value="other">other</option>
+                        <option value="unknown">unknown</option>
+                    </select>
+                </div><br>
+                <div>
+                    <button type="submit">submit</button>
+                </div>
+            </form><br>
+        </section>
+    </main>
+    <section>
+        <h3>Prediction:</h3>
+        <div>
+            <p>The prediciton is <strong><em>{{results}}</em></strong>.</p>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
