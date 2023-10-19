@@ -1,8 +1,10 @@
 # Problem Statement : to predict if the client will subscribe to a term deposit
 
 ## Pre-requisite step:
-     1. (mandetory) go to https://www.dropbox.com/scl/fo/ts0sdza10yylflk7xwmgy/h?rlkey=w8golgugeobj2dom280er4k12&dl=0 and downlad all files to the src/components/transformation_objects folder 
-     2. (optional: if needed) go to https://www.dropbox.com/scl/fo/wh8smv0tn536o7phgyvd8/h?rlkey=fw0fpdsse0wtbwe10ukh1lbru&dl=0 link and download RandomForest.joblib file to the src/components/model folder
+     1. (mandetory) go to https://www.dropbox.com/scl/fo/ts0sdza10yylflk7xwmgy/h?rlkey=w8golgugeobj2dom280er4k12&dl=0 
+          and downlad test_pipline.joblib to the src/components/transformation_objects folder 
+     2. (optional: if needed) go to https://www.dropbox.com/scl/fo/wh8smv0tn536o7phgyvd8/h?rlkey=fw0fpdsse0wtbwe10ukh1lbru&dl=0 
+          and download RandomForest.joblib file to the src/components/model folder
 
 # create conda enviroment
 > conda create --name venv python=3.10
