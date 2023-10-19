@@ -107,7 +107,7 @@ if __name__ == '__main__':
                    "loan": ["no"],
                    "contact": ["cellular"],
                    "day": [5],
-                   "month": [5],
+                   "month": ['may'],
                    "duration": [650],
                    "campaign": [5],
                    "pdays": [-1],
